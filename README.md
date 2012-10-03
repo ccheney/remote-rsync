@@ -1,5 +1,10 @@
 A modest rsync script I wrote to perform weekly backups on a cron job to a remote server. It will use a private key (password-less ssh - google it) to log into the remote server and transfer the files.
 
+Example Cron:
+Run at 00:01 every Saturday:
+
+1 0 * * 6 /usr/bin/remote-rsync.sh
+
 Variables
 ---------
 
